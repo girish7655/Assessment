@@ -53,6 +53,7 @@ const errorMessage = computed(() =>
   page.props.errors?.isbn ||
   page.props.errors?.publication_date ||
   page.props.errors?.description || 
+  page.props.errors?.cover_image || 
   ''
 );
 // Auto-dismiss flash messages after 3 seconds
@@ -189,6 +190,9 @@ const rules = {
     description: {
         required: true,
         minLength: 10
+    },
+    cover_image: {
+        required: true
     },
     category_id: {
         required: true
