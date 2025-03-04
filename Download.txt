@@ -1,0 +1,6 @@
+Download
+
+
+Run php artisan migrate and 
+
+php artisan migrate:fresh --seed
